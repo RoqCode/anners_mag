@@ -1,0 +1,115 @@
+.buffer {
+    width: 100%;
+    height: 80px;
+}
+
+#title {
+    margin-left: 15%;
+    margin-top: 10%;
+}
+
+/*--- GENERAL STUFF ---*/
+html {
+    box-sizing: border-box;
+}
+
+/* main content size & position*/
+main {
+    max-width: 1000px;
+    margin: auto;
+    width: 80%;
+}
+
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+/* 3 columns*/
+.column {
+    width: 50%;
+    margin-bottom: 20px;
+    padding: 0px 40px 20px 0px;
+}
+
+/* displaying the columns below each other instead of next to each other on small screens */
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+/* shadow for the cards */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    
+}
+
+/* padding inside the container*/
+.aboutContainer {
+    padding: 0 12px;
+}
+
+/* stops following content from floating around the containers */
+.aboutContainer::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* ---------------------------------------------------*/
+
+.container {
+    position: relative;
+}
+
+.image {
+    display: block;
+    object-fit:contain;
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+}
+
+.overlay {
+    background-color: #f55b49;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    transition-property: opacity;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.overlayText, .overlayText a {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
