@@ -132,7 +132,7 @@
   height: 90vh;
   margin: 70px 5vw;
   /* background: url("article_img/Brokkoli_vor_Nachtisch/image3.jpg"); */
-  background: url("anners_mag/article_img/Brokkoli_vor_Nachtisch/image3.jpg");
+  background: url("../anners_mag/article_img/Brokkoli_vor_Nachtisch/image3.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
