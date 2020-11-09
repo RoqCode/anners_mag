@@ -1,0 +1,282 @@
+/*Logo in black instead of red*/
+
+header .logo {
+    fill: #000;
+}
+
+.nav-tgl > span,
+.nav-tgl > span:before,
+.nav-tgl > span:after {
+    background: #000;
+}
+
+.buffer {
+    width: 100%;
+    height: 80px;
+}
+
+.title_BG {
+    height: 30vw;
+    background-color: rgb(245, 91, 73);
+    z-index: -2;
+    width: 110%;
+}
+
+/*Title Heading*/
+#titleFirstLine {
+    position: absolute;
+    margin: 0;
+    width: 70%;
+    left: 15%;
+    top: 2vw;
+    text-align: center;
+    font-size: 20vw;
+}
+
+#title2ndLine {
+    position: absolute;
+    margin: 0;
+    width: 70%;
+    left: 15%;
+    top: 21vw;
+    text-align: center;
+    font-size: 9vw;
+}
+
+#introText {
+    margin-top: 70px;
+    left: 45%;
+
+}
+
+/*Title Illu*/
+#title_illu {
+    position: fixed;
+    margin-top: -6.3%;
+    z-index: -1;
+    max-width: 30%;
+    float: left;
+    top: 0px;
+    left: 0%;
+    margin-right: 10%;
+}
+
+
+
+
+
+
+
+
+/* --- Section with images on the sides --- */
+
+.text_main_flex_container {
+    margin-bottom: 40px;
+}
+
+.sideImg {
+    max-width: 80%;
+    margin: 0em;
+    height: auto;
+}
+
+/*Columns img left*/
+.img_main_left_col {
+    flex: 2;
+    margin-left: 14%;
+}
+
+.text_main_right_col {
+    flex: 5;
+    margin-right: 30%;
+    margin-left: 0%;
+}
+
+/*Columns img right*/
+.text_main_left_col {
+    flex: 5;
+    margin-left: 30%;
+}
+
+.img_main_right_col {
+    flex: 2;
+    margin-right: 10%;
+    margin-left: 5%;
+}
+
+#lessMarginTop {
+    margin-top: -60px;
+}
+
+
+
+#endnote {
+    margin-right: 40%;
+    margin-left: 15%;
+    margin-top: 4em;
+}
+
+h2 {
+    margin-bottom: 0px;
+}
+
+
+
+
+
+
+/*--- MEDIA QUERIES ---*/
+@media (max-width: 1600px) {
+    #title {
+        top: 150px;
+    }
+}
+
+@media (max-width: 1400px) {
+    #introText {
+        transform: translateX(-30%);
+        margin-bottom: 140px;
+    }
+}
+
+@media (max-width: 1300px) {
+    #introText {
+        transform: translateX(-30%);
+        max-width: 50%;
+        margin-bottom: 140px;
+    }
+}
+
+@media (max-width: 1150px) {
+    #introText {
+        transform: translateX(-30%);
+        margin-bottom: 120px;
+    }
+}
+
+@media (max-width: 1060px) {
+    #title2ndLine {
+        top: 22vw;
+    }
+
+    #introText {
+        transform: translateX(-20%);
+        margin-bottom: 10px;
+    }
+
+    .text_main_flex_container {
+        display: flex;
+        flex-direction: column;
+        transform: translateX(0%);
+        margin: 10%;
+        align-items: left;
+    }
+
+    .text_main_left_col {
+        margin-left: 0%;
+        margin-right: 20%;
+        order: 2;
+    }
+
+    .text_main_right_col {
+        margin-left: 0%;
+        margin-right: 20%;
+
+    }
+
+    .img_main_left_col {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .img_main_right_col {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .sideImg {
+        max-width: 40%;
+    }
+}
+
+@media (max-width: 800px) {
+    #introText {
+        transform: translateX(-10%);
+        max-width: 60%;
+        margin-bottom: 10px;
+    }
+
+    #lessMarginTop {
+        margin-top: -20px;
+
+    }
+
+    .quote_turned_right {
+        position: static;
+    }
+}
+
+
+
+
+
+@media (max-width: 700px) {
+    #title_illu {
+        max-width: 60%;
+        position: relative;
+        margin-top: -41.5%;
+        z-index: -1;
+        float: left;
+        left: -2%;
+        margin-bottom: 60px;
+    }
+
+    /*Title Heading*/
+    #titleFirstLine {
+        position: absolute;
+        top: 8vw;
+        font-size: 12vw;
+    }
+
+    #title2ndLine {
+        position: absolute;
+        top: 20vw;
+        font-size: 5vw;
+    }
+
+    .title_BG {
+        height: 29vw;
+        background-color: rgb(245, 91, 73);
+        z-index: -2;
+    }
+
+    #introText {
+        transform: translateX(-40%);
+        max-width: 70%;
+    }
+
+}
+@media (max-width: 700px) {
+    /*Title Heading*/
+    #titleFirstLine {
+        position: absolute;
+        top: 3vw;
+        font-size: 15vw;
+    }
+
+    #title2ndLine {
+        position: absolute;
+        top: 19vw;
+        font-size: 7vw;
+    }
+#endnote {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+}
+@media (max-width: 600px) {
+#endnote {
+    margin-right: 0%;
+    margin-left: 5%;
+}
+}

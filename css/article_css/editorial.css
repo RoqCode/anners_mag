@@ -1,0 +1,8 @@
+.main {
+  border: 20px white solid;
+  background-color: #167d7d;
+}
+
+.bg {
+  min-height: 100vh;
+}

@@ -1,0 +1,337 @@
+/* löschen, wenn fertig */
+.buffer {
+  width: 100%;
+  height: 50px;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.title_picture {
+    z-index: -1;
+  max-width: 100%;
+  height: auto;
+    margin-top: 3em;
+padding: 1em;  
+}
+
+#title_pic {
+    z-index: -2;
+  max-width: 70%;
+    -ms-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+
+
+#title {
+    margin: 0;
+    text-align: left;
+  max-width: 100%;
+}
+
+#text_body_intro {
+    margin-top: -10em;
+}
+
+.linksraus {
+    margin-left: -150px;
+}
+
+.rechtsraus {
+    margin-left: 100px;
+}
+
+.chapter1 {
+    position: static;
+    max-width: 30%;
+    font-size: 3em;
+    line-height: 1em;
+margin-left: 10%;
+    margin-top: 150px;
+    margin-bottom: -120px;
+    opacity: 0.8;
+}
+
+.chapter2 {
+    position: static;
+   max-width: 30%;
+    font-size: 3em;
+    line-height: 1em;
+    text-align: right;
+    margin-left: 60%;
+    margin-top: 150px;
+    margin-bottom: -120px;
+    opacity: 0.8;
+}
+
+.block1 {
+    margin-top: 100px;
+}
+
+#hands {
+    position: absolute;
+    max-width: 40%;
+    z-index: -1;
+    margin-left: 57%;
+    margin-top: -350px;
+    opacity: 0.8;
+}
+
+#handschellen {
+    position: absolute;
+    max-width: 40%;
+    z-index: -1;
+    margin-top: -500px;
+    margin-left: 2%;
+    opacity: 0.8;
+}
+
+#deko1 {
+    position: absolute;
+    z-index: -2;
+    opacity: 0.2;
+    max-width: 90%;
+    margin-left: 10%;
+    margin-top: -700px;
+}
+
+#deko2 {
+    position: absolute;
+    z-index: -2;
+    opacity: 0.6;
+    max-width: 30%;
+    margin-left: 0;
+    margin-top: -400px;
+}
+
+
+#deko3 {
+    position: absolute;
+    z-index: -4;
+    opacity: 0.6;
+    max-width: 60%;
+    right: 0;
+    margin-top: -500px;
+}
+
+@media (max-width: 1300px) {
+  #title_pic {
+  max-width: 60%;
+      margin-top: 100px;
+      margin-bottom: 50px;
+      margin-left: 10%;
+  }
+
+  .chapter1 {
+   margin-left: 3%;
+    font-size: 2.5em;
+  }
+    
+    .chapter2 {
+   margin-left: 67%;
+        font-size: 2.5em;
+  }
+    
+     #deko1 {
+        max-width: 100%;
+        margin-left: 0%;
+        margin-top: -550px;
+    }
+    
+    #deko3 {
+    position: absolute;
+    z-index: -4;
+    opacity: 0.6;
+    max-width: 60%;
+    right: 0px;
+    margin-top: -300px;
+}
+    
+    #hands{
+        margin-top: -50px;
+        margin-left: 55%;
+        max-width: 45%;
+        opacity: 0.5;
+    }
+    
+    #handschellen {
+        margin-top: -700px;
+        opacity: 0.5;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 1000px) {
+    
+    .linksraus {
+    margin-left: 0px;
+}
+
+.rechtsraus {
+    margin-left: 0px;
+}
+    
+    
+    .chapter1 {
+   margin-left: 3%;
+    max-width: 50%    
+  }
+    
+    .chapter2 {
+   margin-left: 47%;
+        max-width: 50%;
+  }
+    
+        #deko1 {
+        max-width: 100%;
+        margin-left: 0%;
+        margin-top: -500px;
+    }
+    
+    #deko2 {
+    opacity: 0.5;
+    max-width: 40%;
+}
+    
+    #hands{
+        margin-top: -200px;
+        opacity: 0.3;
+        max-width: 60%;
+        margin-left: 40%;
+    }
+    
+    #handschellen {
+        margin-top: -650px;
+        opacity: 0.3;
+        max-width: 50%;
+        margin-left: 0%;
+    }
+}
+
+@media (max-width: 800px) {
+    
+    .buffer {
+  display: none;
+}
+
+    
+    #title_pic {
+  max-width: 80%;
+      margin-top: 100px;
+      margin-bottom: 100px;
+      margin-left: 5%;
+         -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+    
+    .chapter1 {
+   margin-left: 3%;
+    max-width: 60%;
+        font-size: 2em;
+  }
+    
+    .chapter2 {
+   margin-left: 37%;
+        max-width: 60%;
+        font-size: 2em;
+  }
+    
+    #handschellen {
+        margin-top: -900px;
+    }
+    
+     #deko3 {
+    margin-top: -200px;
+}
+    
+}
+
+@media (max-width: 600px) {
+    
+    #title_pic {
+  max-width: 95%;
+      margin-bottom: 50px;
+      margin-left: 0%;
+  }
+    
+    .chapter1 {
+   margin-left: 3%;
+    max-width: 80%    
+  }
+    
+    .chapter2 {
+   margin-left: 17%;
+        max-width: 80%;
+  }
+    
+    
+    
+    #deko3 {
+    margin-top: -200px;
+        max-width: 80%;
+}
+    
+    #hands{
+        margin-top: -200px;
+        opacity: 0.3;
+        max-width: 80%;
+        margin-left: 20%;
+    }
+    
+    #handschellen {
+        margin-top: -700px;
+        max-width: 80%;
+        margin-left: -100px;
+    }
+    
+}
+
+@media (max-width: 400px) {
+    
+    #title_pic {
+  max-width: 100%;
+        margin-bottom: 100px;
+        margin-top: 50px;
+  }
+    
+    .chapter1 {
+   margin-left: 3%;
+    max-width: 90%    
+  }
+    
+    .chapter2 {
+   margin-left: 7%;
+        max-width: 90%;
+  }
+    
+    #deko1 {
+        position: absolute;
+        max-height: 300%;
+        margin-top: -400px;
+}
+    
+    #deko2 {
+    display: none;
+}
+    
+    #deko3 {
+    margin-top: -100px;
+        max-width: 100%;
+        margin-right: 0;
+}
+    
+    #hands{
+        margin-top: -200px;
+        opacity: 0.3;
+        max-width: 90%;
+        margin-left: 10%;
+    }
+    
+    #handschellen {
+        margin-top: -1000px;
+        max-width: 90%;
+        margin-left: -50px;
+    }
+    
+}

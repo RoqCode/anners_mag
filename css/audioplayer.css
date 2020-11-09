@@ -1,0 +1,156 @@
+.audio_wrapper {
+  position: relative;
+  top: 200px;
+  left: 200px;
+}
+
+.js_audio {
+  position: fixed;
+  bottom: 25px;
+  left: 75px;
+  height: 50px;
+  width: 200px;
+}
+
+.playButton {
+  position: absolute;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  background-color: rgb(245, 91, 73);
+
+  transform: translateX(-100%);
+}
+
+.timeSlider_outer {
+  position: absolute;
+  top: 70%;
+  left: 4px;
+  transform: translateY(-50%);
+
+  height: 8px;
+  width: 150px;
+  background-color: rgb(199, 199, 199);
+
+  border-radius: 4px;
+
+  overflow: hidden;
+
+  cursor: pointer;
+}
+
+.timeSlider_inner {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+
+  background-color: rgb(245, 91, 73);
+}
+
+.volSlider_outer {
+  position: absolute;
+  top: 30%;
+  left: 30px;
+  transform: translateY(-50%);
+  width: 75px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: rgb(199, 199, 199);
+  overflow: hidden;
+
+  cursor: pointer;
+}
+
+.volSlider_inner {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+
+  background-color: rgb(245, 91, 73);
+}
+
+.vol_icon {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 25px;
+  width: 25px;
+  border-radius: 12.5px;
+  /* background-color: rgb(245, 91, 73); */
+}
+
+.vol_icon > svg {
+  fill: rgb(245, 91, 73);
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center;
+  transform: translate(-50%, -50%);
+}
+
+.playIcon {
+  fill: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.5);
+
+  visibility: hidden;
+}
+
+.pauseIcon {
+  fill: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.5);
+
+  visibility: hidden;
+}
+
+.alert {
+  position: absolute;
+
+  width: 200px;
+  padding: 10px;
+
+  top: -140px;
+  left: -50px;
+
+  background-color: rgb(245, 91, 73);
+}
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+
+  visibility: hidden;
+}
+
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.active {
+  visibility: visible;
+}

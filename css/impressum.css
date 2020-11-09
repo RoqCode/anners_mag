@@ -1,0 +1,64 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+
+    font-family: sofia-pro, Helvetica, sans-serif;
+}
+
+.frame {
+    position: fixed;
+    background-color: #F55B49;
+    height: 80%;
+    bottom: 0;
+}
+
+h3 {
+    color: white;
+    font-size: 60px;
+    float: left;
+    margin-top: -20px;
+    margin-bottom: 0.25em;
+    margin-left: 0.5em;
+    margin-right: 100%;
+    transform: rotate(180deg)
+}
+
+h4 {
+    color: white;
+    font-size: 25px;
+}
+
+h5 {
+    color: white;
+    font-size: 20px;
+}
+
+
+
+.inside {
+    min-height: 20%;
+    max-height: 78%;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+.container {
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.inside::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+}
+
+.text {
+    color: white;
+}

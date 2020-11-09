@@ -1,0 +1,255 @@
+/* header & navbar */
+
+/* NAVBAR und Header */
+
+header .logo {
+  /* position: fixed; */
+  fill: #f55b49;
+  display: left;
+  width: 20%;
+  max-width: 12em;
+  max-height: 6em;
+}
+
+header {
+  width: 100%;
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  position: fixed;
+  max-height: 100px;
+  min-height: 50px;
+  top: 0;
+  display: block;
+  z-index: 9;
+  padding: 1em;
+  /* background-color: #167d7d; */
+  /* transition: top 0.5s ease-in-out; */
+  /* so it eases in and out */
+}
+
+.head {
+  /* position: relative; */
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-up {
+  transform: translateY(-150px);
+}
+
+/* BURGER MENU */
+
+.nav-tgl {
+  cursor: pointer;
+  position: absolute;
+  float: left;
+  z-index: 100;
+  right: 65px;
+  top: 30px;
+  width: 70px;
+  height: 70px;
+  border: none;
+  background: transparent;
+}
+
+.nav-tgl > span {
+  display: inline-block;
+  position: relative;
+  height: 5px;
+  min-width: 50px;
+  border-radius: 100px;
+  background: #f55b49;
+  vertical-align: right;
+}
+
+.nav-tgl > span:before,
+.nav-tgl > span:after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  height: 5px;
+  border-radius: 100px;
+  background: #f55b49;
+  transition: all 200ms;
+}
+
+.nav-tgl > span:before {
+  top: -11px;
+  right: 0;
+  width: 40px;
+}
+
+.nav-tgl > span:after {
+  top: 11px;
+  right: 0;
+  width: 30px;
+}
+
+.nav-tgl:focus {
+  outline: none;
+}
+
+.nav-tgl:hover > span:after,
+.nav-tgl:hover > span:before {
+  width: 50px;
+}
+
+.nav-tgl.toggled > span {
+  height: 0;
+}
+
+.nav-tgl.toggled > span:after,
+.nav-tgl.toggled > span:before {
+  top: 0px;
+  left: 0;
+  width: 50px;
+}
+
+.nav-tgl.toggled > span:after {
+  transform: rotate(-45deg);
+  background: white;
+}
+
+.nav-tgl.toggled > span:before {
+  transform: rotate(45deg);
+  background: white;
+}
+
+.nav {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #167d7d;
+  transition: all 500ms ease-in-out;
+  clip-path: circle(30px at calc(100% - 65px) 65px);
+  visibility: hidden;
+
+  z-index: 11;
+}
+
+.active.nav {
+  visibility: visible;
+  clip-path: circle(100%);
+}
+
+nav ul {
+  z-index: 150;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.right-flex,
+.left-flex {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+header > li {
+  padding: 0.5em;
+}
+
+.float {
+  float: left;
+}
+
+/* .menucenter {} */
+
+.menu-head {
+  color: white;
+}
+
+.links1 {
+  font-size: 3rem;
+  color: white;
+  letter-spacing: -0.02em;
+}
+
+.links1 span {
+  position: relative;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.links1 span:hover {
+  left: 20px;
+}
+
+.menubottom {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.links2 {
+  font-size: 1.2em;
+  cursor: pointer;
+  color: white;
+  padding: 0.3em;
+}
+
+.links2:hover {
+  color: white;
+  transition: 0.3s;
+}
+
+.back-to-top {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  border-radius: 25px;
+  color: white;
+  background-color: rgb(245, 91, 73);
+  display: none;
+  -webkit-box-shadow: 10px 10px 23px -17px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 23px -17px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 23px -17px rgba(0, 0, 0, 0.75);
+
+  z-index: 2;
+  cursor: pointer;
+}
+
+.back-top-chevron {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(2);
+  fill: white;
+
+  transition: top 0.3s cubic-bezier(0.17, 0.67, 0.54, 2.08);
+}
+
+.back-top-chevron_up {
+  top: 40%;
+}
+
+@media (orientation: portrait) {
+  .nav-container {
+    flex-direction: column;
+  }
+
+  .right-flex {
+    flex: 3;
+    align-items: flex-start;
+    text-align: center;
+  }
+}

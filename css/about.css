@@ -1,0 +1,106 @@
+body {
+    overflow-x: hidden;
+}
+
+#title {
+    text-transform: uppercase;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    text-align: center;
+    display: block;
+
+}
+
+#team {
+    margin: 40px;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#teamImage {
+    max-width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 60px;
+}
+
+
+.hidden {
+    opacity: 0;
+    transition: opacity .5s ease-in;
+
+}
+
+.visible {
+    opacity: 1;
+
+}
+
+/* person description container*/
+#descriptionContainer {
+    max-width: 20%;
+}
+
+#descriptionContainer > p {
+    position: absolute;
+    display: block;
+    text-align: center;
+}
+/*name of person*/
+.hidden .bold {
+    font-size: 2em;
+}
+
+.text_main_flex_container {
+    margin-top: 0px;
+}
+
+.text_main_central_col {
+    margin-top: 0px;
+}
+
+.changeFill {
+    fill: rgb(245, 91, 73);
+}
+
+#aboutUs {
+    text-align: center;
+}
+
+
+
+/*--- MEDIA QUERIES ---*/
+@media (max-width: 1600px) {}
+
+@media (max-width: 1300px) {}
+
+@media (max-width: 1000px) {
+    #descriptionContainer {
+        max-width: 100%;
+
+    }
+
+    #descriptionContainer > p {
+        max-width: 100%;
+    }
+
+    #descriptionContainer {
+        padding: 10px;
+    }
+
+    #teamImage {
+        padding-top: 100px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    #title{
+        margin-top: 100px;
+    }
+}

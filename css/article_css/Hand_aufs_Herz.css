@@ -1,0 +1,244 @@
+body {
+    overflow-x: hidden;
+}
+
+/*--- Heading Section ---*/
+.title_picture {
+    height: auto;
+    top: -35px;
+}
+
+#title_pic {
+    max-width: 100%;
+}
+
+.title {
+    margin-top: -100px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+#subhead {
+    margin: 0;
+    z-index: 2;
+    padding-top: 0em;
+    margin-left: 10%;
+}
+
+.right{
+    text-align: right;
+}
+
+
+
+/*--- Info Graph stuff ---*/
+
+
+
+/* basics */
+.flex-container_1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: flex-start;
+    margin-top: 60px;
+
+}
+
+.flex-container_1 > div {
+    background-color: #fff;
+    margin: 10px 21px 2px 21px;
+    text-align: left;
+    line-height: 75px;
+
+}
+
+/* images */
+.infoGraph {
+    text-align: center;
+    margin-top: 60px;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+}
+
+#circleGraph {
+    margin-top: 2px;
+
+}
+
+#gruende {
+    margin-bottom: -50px;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* text */
+.infoText {
+    margin-bottom: 0px;
+}
+
+.number {
+    font-weight: 600;
+    margin: 0px;
+}
+
+.infoTextNote {
+    font-size: 80%;
+}
+
+/*2nd part of graph*/
+.flex-container_2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.flex-container_2 > div {
+    background-color: #fff;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    max-width: 200px;
+}
+
+.smallGraphImg {
+    max-width: 100%;
+}
+
+
+#quote_links {
+    align-content: left;
+    z-index: -1;
+    max-width: 15%;
+    padding-left: 10em;
+    padding-top: 20px;
+
+}
+
+
+
+/*--- Other Layout Stuff ---*/
+
+.backgroundBlur {
+    /*setting alpha = 0.1*/
+    background: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+}
+
+
+/*Main Illu at page bottom*/
+#main_illu {
+    z-index: -1;
+    max-width: 150%;
+    float: right;
+    margin-right: -5%;
+    margin-top: -800px;
+
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1600px) {
+
+    #subhead {
+        font-size: 2.5em;
+    }
+}
+
+
+@media (max-width: 1100px) {
+    #quote_links {
+        max-width: 80%;
+        padding-left: 20%;
+    }
+
+}
+
+
+
+@media (max-width: 1000px) {
+
+    #subhead {
+        font-size: 2em;
+    }
+
+    #quote_links {
+        max-width: 80%;
+        padding-left: 10%;
+    }
+
+}
+
+@media (max-width: 800px) {
+    #circleGraph {
+        width: 70%;
+        height: auto;
+    }
+
+    .quote_turned_right {
+        position: static;
+    }
+
+    #main_illu {
+        z-index: -1;
+        max-width: 100%;
+        position: absolute;
+        margin-right: -5%;
+        margin-top: -0px;
+
+    }
+    #title_pic {
+    max-width: 100%;
+        height: 300px;
+    object-fit: cover;
+}
+}
+
+@media (max-width: 600px) {
+
+    .flex-container_1 {
+        justify-content: flex-start;
+    }
+
+    #circleGraph {
+        width: 100%;
+    }
+
+    #gruende {
+        margin-bottom: -10px;
+    }
+
+    #imgGruende {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    #circleGraph {
+        width: 100%;
+    }
+
+    #gruende {
+        margin-bottom: -10px;
+    }
+
+    #imgGruende {
+        width: 98%;
+        margin-bottom: 35px;
+    }
+
+}

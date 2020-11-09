@@ -1,0 +1,207 @@
+/* löschen, wenn fertig */
+.buffer {
+    width: 100%;
+    height: 200px;
+}
+
+.buffer2 {
+    width: 100%;
+    height: 100px;
+}
+
+#title_pic {
+    position: fixed;
+    margin-top: -10%;
+    z-index: -1;
+    max-width: 40%;
+    float: left;
+    margin-left: 5%;
+}
+
+#title {
+    text-align: right;
+    width: 90%;
+    margin: 0;
+    margin-top: 20%;
+    margin-right: 10%;
+}
+
+#star {
+    float: right;
+    clear: both;
+    display: inline;
+    max-width: 5%;
+    margin-right: 5%;
+    margin-top: 18%;
+}
+
+#subhead {
+    float: right;
+    clear: both;
+    max-width: 50%;
+    margin-top: 1em;
+    margin-right: 10%;
+
+}
+
+#text_body_main {
+    margin-top: 70px;
+}
+
+#quote1_space {
+    position: static;
+    width: 100%;
+    margin: 0;
+    margin-top: 100pX;
+    height: 200px;
+}
+
+.turn {
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+#quote_1 {
+    z-index: 2;
+    text-align: right;
+    float: right;
+    padding: 1em;
+    margin: 0;
+    margin-bottom: 3em;
+    margin-right: 5%;
+}
+
+#quote_2 {
+    z-index: 2;
+    color: rgb(245, 91, 73);
+    text-align: left;
+    padding: 1em;
+    padding-top: 3em;
+    margin-left: 5%;
+}
+
+#masks {
+    position: absolute;
+    z-index: -1;
+    max-width: 15%;
+    margin: 0;
+    margin-top: -150px;
+    margin-left: 5%;
+}
+
+#maskpile {
+    position: absolute;
+    max-width: 40%;
+    margin: 0;
+    margin-left: 5%;
+}
+
+.bold {
+    font-weight: 1000;
+}
+
+@media (max-width: 1800px) {
+    #title_pic {
+        max-width: 35%;
+    }
+}
+
+
+@media (max-width: 1300px) {
+    #subhead {
+        max-width: 55%;
+    }
+
+    #masks {
+        max-width: 17%;
+    }
+
+    #maskpile {
+        max-width: 50%;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    #title_pic {
+        min-width: 35%;
+    }
+
+    #masks {
+        max-width: 20%;
+    }
+
+    #maskpile {
+        max-width: 60%;
+    }
+
+    #star {
+        max-width: 6%;
+    }
+}
+
+@media (max-width: 600px) {
+    #title_pic {
+        min-width: 45%;
+    }
+
+    #title {
+        margin-top: 40%;
+    }
+
+    #star {
+        max-width: 10%;
+        margin-top: 35%;
+    }
+
+    #subhead {
+        max-width: 80%;
+    }
+
+    #masks {
+        max-width: 30%;
+    }
+
+    #maskpile {
+        max-width: 60%;
+    }
+}
+
+@media (max-width: 450px) {
+    #title_pic {
+        min-width: 50%;
+    }
+
+    #star {
+        max-width: 11%;
+        margin-top: 38%;
+    }
+
+    #masks {
+        max-width: 40%;
+        position: static;
+        margin-bottom: -50px;
+    }
+
+    #maskpile {
+        max-width: 80%;
+        margin-top: 100px;
+    }
+
+    .buffer {
+        height: 20px;
+    }
+
+    .buffer2 {
+        height: 20px;
+    }
+
+    #quote1_space {
+        position: static;
+        width: 100%;
+        margin: 0;
+        margin-top: 100px;
+        margin-bottom: 80px;
+        height: 200px;
+    }
+}
