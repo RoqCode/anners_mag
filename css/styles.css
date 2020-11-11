@@ -308,7 +308,7 @@ a {
 }
 
 .flickity-page-dots {
-  bottom: 5vh;
+  bottom: 25px;
 }
 
 .flickity-page-dots .dot {
