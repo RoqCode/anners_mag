@@ -171,11 +171,13 @@ header > li {
 /* .menucenter {} */
 
 .menu-head {
+  font-size: 6em;
   color: white;
+  margin: 20px;
 }
 
 .links1 {
-  font-size: 3rem;
+  font-size: 3em !important;
   color: white;
   letter-spacing: -0.02em;
 }
@@ -192,7 +194,7 @@ header > li {
 
 .menubottom {
   position: absolute;
-  bottom: 0;
+  bottom: 5vh;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
