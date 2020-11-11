@@ -306,7 +306,7 @@ a {
 }
 
 .flickity-page-dots {
-  top: 95vh;
+  bottom: 5vh;
 }
 
 .flickity-page-dots .dot {
@@ -486,6 +486,12 @@ a {
   .intro {
     top: 38%;
     font-size: 1.5em;
+  }
+
+  .nav-tgl {
+    top: 15px !important;
+    right: 40px !important;
+    transform: scale(0.8);
   }
 }
 
