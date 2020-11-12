@@ -530,5 +530,6 @@ header .logo {
 
 .windowHeight {
   position: absolute;
+  top: 50%;
   color: white;
 }
