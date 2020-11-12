@@ -527,3 +527,8 @@ header .logo {
 .menu-head {
   font-size: 6em;
 }
+
+.windowHeight {
+  position: absolute;
+  color: white;
+}
