@@ -165,7 +165,7 @@ header > li {
 }
 
 .float {
-  float: left;
+  display: inline;
 }
 
 /* .menucenter {} */
@@ -194,10 +194,10 @@ header > li {
 
 .menubottom {
   position: absolute;
-  bottom: 5vh;
+  width: 100%;
+  top: 0;
   left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
 }
 
 .links2 {
