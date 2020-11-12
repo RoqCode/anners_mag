@@ -121,6 +121,8 @@ $(document).scroll(function () {
 
 function returnWinHeight() {
   winHeight.html(`${$(window).height()}`);
+
+  $(".flickity-page-dots").css("top", `${$(window).height() - 20}px`);
 }
 
 // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
