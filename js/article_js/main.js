@@ -4,6 +4,7 @@
 var lazyLoaders = $(".lazy-load");
 var parallaxer = $(".parallax");
 var backB = $(".back-to-top");
+var winHeight = $(".windowHeight");
 
 function triggerLoad() {
   lazyLoaders.each(function () {
@@ -104,6 +105,11 @@ backB.hover(
 $(document).ready(function () {
   triggerLoad();
   parallax();
+  returnWinHeight();
+});
+
+$(window).resize(function () {
+  returnWinHeight();
 });
 
 $(document).scroll(function () {
@@ -112,6 +118,10 @@ $(document).scroll(function () {
   showBackButton();
   didScroll = true;
 });
+
+function returnWinHeight() {
+  winHeight.html(`${$(window).height()}`);
+}
 
 // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
 let vh = window.innerHeight * 0.01;
