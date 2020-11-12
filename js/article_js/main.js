@@ -120,17 +120,8 @@ $(document).scroll(function () {
 });
 
 function returnWinHeight() {
-  winHeight.html(`${$(window).height()}`);
+  let winHeight = $(window).height();
 
-  $(".flickity-page-dots").css("top", `${$(window).height() - 20}px`);
+  $(".flickity-page-dots").css("top", `${winHeight - 35}px`);
+  $(".menubottom").css("top", `${winHeight - 35}px`);
 }
-
-// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
-let vh = window.innerHeight * 0.01;
-// Then we set the value in the --vh custom property to the root of the document
-document.documentElement.style.setProperty("--vh", `${vh}px`);
-
-$(window).resize(function () {
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty("--vh", `${vh}px`);
-});

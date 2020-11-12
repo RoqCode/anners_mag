@@ -50,7 +50,7 @@ var header = $(`<header>
               <ul class="link">
                 <div class="menucenter">
                   <li>
-                    <a class="links1" href="index.html"><span>Auswahl</span></a>
+                    <a class="links1" href="index.html"><span>Startseite</span></a>
                   </li>
                   <li>
                     <a class="links1" href="editorial.html"><span>Editorial</span></a>
@@ -66,8 +66,8 @@ var header = $(`<header>
                     >
                   </li>
                   <li>
-                    <a class="links1" href="makingoff.html"
-                      ><span>Making-Off</span></a
+                    <a class="links1" href="makingOf.html"
+                      ><span>Making-Of</span></a
                     >
                   </li>
                 </div>
