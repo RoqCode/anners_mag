@@ -30,6 +30,7 @@ function audioManager() {
     //start loading wheel
     $(".playIcon").removeClass("active");
     $(".lds-dual-ring").addClass("active");
+    console.log("audio NOT loaded");
     myAudio = new Audio(`./podcasts/${getTag()}.opus`);
     console.log("audio loaded");
 
