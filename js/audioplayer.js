@@ -33,7 +33,7 @@ function audioManager() {
     //start loading wheel
     $(".playIcon").removeClass("active");
     $(".lds-dual-ring").addClass("active");
-    myAudio = new Audio(`./podcasts/${getTag()}.opus`);
+    myAudio = new Audio(`./podcasts/${getTag()}.mp3`);
 
     // myAudio = new Audio(`./podcasts/testMP3.mp3`);
     myAudio.load();
