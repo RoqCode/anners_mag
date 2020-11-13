@@ -32,7 +32,8 @@ function audioManager() {
     $(".playIcon").removeClass("active");
     $(".lds-dual-ring").addClass("active");
     console.log("audio NOT loaded");
-    myAudio = new Audio(`./podcasts/${getTag()}.opus`);
+    // myAudio = new Audio(`./podcasts/${getTag()}.opus`);
+    myAudio = new Audio(`./podcasts/testMP3.mp3`);
     console.log("audio loaded");
 
     myAudio.addEventListener("canplaythrough", loadedAudio);
