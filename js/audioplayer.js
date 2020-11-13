@@ -28,13 +28,18 @@ function audioManager() {
   $(".alert").fadeOut();
   console.log("ping");
   if (!loaded) {
+    window.onerror = function () {
+      alert("Audio can not be loaded!");
+    };
     //start loading wheel
     $(".playIcon").removeClass("active");
     $(".lds-dual-ring").addClass("active");
     console.log("audio NOT loaded");
     myAudio = new Audio(`./podcasts/${getTag()}.opus`);
+
     // myAudio = new Audio(`./podcasts/testMP3.mp3`);
     myAudio.load();
+    alert(myAudio);
     console.log("audio loaded");
 
     myAudio.addEventListener("canplaythrough", loadedAudio);
