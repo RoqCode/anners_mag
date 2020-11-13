@@ -26,6 +26,7 @@ $(document).ready(function () {
 
 function audioManager() {
   $(".alert").fadeOut();
+  console.log("ping");
   if (!loaded) {
     //start loading wheel
     $(".playIcon").removeClass("active");
