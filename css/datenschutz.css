@@ -5,6 +5,7 @@ body {
 
     font-family: sofia-pro, Helvetica, sans-serif;
     background-color: rgb(245, 91, 73);
+    overflow: hidden;
 }
 
 header .logo {
@@ -12,12 +13,12 @@ header .logo {
 }
 
 .nav-tgl > span {
-  background: black;
+    background: black;
 }
 
 .nav-tgl > span:before,
 .nav-tgl > span:after {
-  background: black;
+    background: black;
 }
 
 .turn {
@@ -25,22 +26,21 @@ header .logo {
     transform: rotate(90deg);
 }
 
-#side
-{
+#side {
     float: left;
     position: absolute;
     position: fixed;
     color: white;
     font-size: 5em;
     margin: 0;
-    margin-left: -180px;
-    margin-top: 160px;
+    margin-left: -209px;
+    margin-top: 345px;
 }
 
 .textfield {
     margin-top: 170px;
     margin-left: 6em;
-    margin-right: 30%;
+    margin-right: 50%;
     margin-bottom: 4em;
 }
 
@@ -60,54 +60,67 @@ header .logo {
 
 
 @media (max-width: 1400px) {
-    
+
     .textfield {
-    margin-top: 170px;
-    margin-left: 6em;
-    margin-right: 6em;
-    margin-bottom: 4em;
-}
-    
-    .subhead1 {
-    color: white;
-    font-size: 30px;
-}
-
-.subhead2 {
-    color: white;
-    font-size: 20px;
-}
-
+        margin-top: 170px;
+        margin-left: 6em;
+        margin-right: 30%;
+        margin-bottom: 4em;
     }
 
-@media (max-width: 600px) {
-    
-    #side {
-    font-size: 3em;
-    margin-left: -105px;
-    margin-top: 95px;
+    .subhead1 {
+        color: white;
+        font-size: 30px;
+    }
+
+    .subhead2 {
+        color: white;
+        font-size: 20px;
+    }
+
 }
 
-    
+@media (max-width: 800px) {
+
+    .textfield {
+        margin-right: 6em;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    #side {
+        font-size: 3em;
+        margin-left: -122px;
+        margin-top: 250px;
+    }
+
+
     .textfield {
         margin-top: 140px;
         margin-left: 3em;
         margin-right: 1em;
+        margin-bottom: 0;
     }
-    
+
     .subhead1 {
-    color: white;
-    font-size: 20px;
-}
-
-.subhead2 {
-    color: white;
-    font-size: 15px;
-}
-
+        color: white;
+        font-size: 20px;
     }
+
+    .subhead2 {
+        color: white;
+        font-size: 15px;
+    }
+
+}
 
 @media (max-width: 400px) {
+
+    #side {
+        margin-top: 220px;
+    }
     
     .textfield {
         margin-top: 110px;
@@ -115,4 +128,4 @@ header .logo {
         margin-right: 1em;
     }
 
-    }
+}

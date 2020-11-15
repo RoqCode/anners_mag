@@ -1,5 +1,8 @@
-/*Logo in black instead of red*/
+body {
+    overflow-x: hidden;
+}
 
+/*Logo in black instead of red*/
 header .logo {
     fill: #000;
 }
@@ -52,12 +55,12 @@ header .logo {
 /*Title Illu*/
 #title_illu {
     position: fixed;
-    margin-top: -6.3%;
+    margin-top: -4.1%;
     z-index: -1;
-    max-width: 30%;
+    max-width: 28%;
     float: left;
     top: 0px;
-    left: 0%;
+    left: -0.5%;
     margin-right: 10%;
 }
 

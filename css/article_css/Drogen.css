@@ -6,6 +6,7 @@
 #title {
     margin-left: 15%;
     margin-top: 10%;
+    z-index: 1;
 }
 
 
@@ -42,14 +43,27 @@
     }
 }
 
+@media (max-width: 1400px) {
+    #title {
+        margin-left: 20%;
+    }
+}
+
+
 @media (max-width: 1300px) {
     #title {
         top: 100px;
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
+    #title {
+        margin-left: 20%;
+        margin-top: 15%;
+    }
+}
 
+@media (max-width: 1000px) {
     #title {
         top: 125px;
     }
@@ -57,10 +71,10 @@
 
 @media (max-width: 800px) {
 
-#title {
-    margin-left: 10%;
-    margin-top: 10%;
-}
+    #title {
+        margin-left: 10%;
+        margin-right: 5%;
+    }
 
     .text_main_left_col1 {
         margin-left: 10%;
@@ -73,11 +87,18 @@
 }
 
 @media (max-width: 600px) {
-    #title {
-        top: 25px;
-        left: 5%;
+    #title br {
+        display: none;
     }
-    #titleStar{
+    
+    #titleStar {
         padding: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    #title {
+        margin-top: 20%;
     }
 }
