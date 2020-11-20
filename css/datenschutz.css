@@ -21,6 +21,10 @@ header .logo {
     background: black;
 }
 
+.buffer {
+    height: 100px;
+}
+
 .turn {
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
