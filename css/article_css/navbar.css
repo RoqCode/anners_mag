@@ -19,7 +19,7 @@ header {
   min-height: 50px;
   top: 0;
   display: block;
-  z-index: 9;
+  z-index: 99;
   padding: 1em;
   /* background-color: #167d7d; */
   /* transition: top 0.5s ease-in-out; */
